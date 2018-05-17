@@ -1,9 +1,11 @@
+com/taotao/service/ItemParamItemService.class
 com/taotao/service/IFileTagService.class
 com/taotao/service/PictureService.class
 com/taotao/service/imp/Chain_AddressService.class
 com/taotao/service/imp/ItemServiceImp.class
 com/taotao/service/imp/PictureServiceImpl.class
 com/taotao/service/imp/MerkleServiceImp.class
+com/taotao/service/imp/ItemParamItemServiceImp.class
 com/taotao/service/ItemParamService.class
 com/taotao/service/ItemService.class
 com/taotao/service/imp/FileTagServiceImp.class

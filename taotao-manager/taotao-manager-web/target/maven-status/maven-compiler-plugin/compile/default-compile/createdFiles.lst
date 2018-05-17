@@ -8,3 +8,4 @@ com/taotao/controller/TestWebSocketService.class
 com/taotao/controller/TestWSController.class
 com/taotao/controller/Fileurl.class
 com/taotao/controller/ItemController.class
+com/taotao/controller/ItemParamItemController.class
