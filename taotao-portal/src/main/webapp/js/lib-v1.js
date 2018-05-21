@@ -1,5 +1,5 @@
  /*
- Date: 2014-09-25 3:59:11 [PM] 
+ Date: 2014-09-25 3:59:11 [PM]
  */
 function StringBuilder() {
     this.strings = new Array, this.length = 0
@@ -1171,9 +1171,10 @@ $.extend(jdModelCallCenter, {autoLocation: function(a) {
 //http://d.360buy.com/configs/get?type=JSON
 var category = {OBJ: $("#_JD_ALLSORT"),
 		//URL_Serv: "http://manage.taotao.com/web/itemcat/all?callback=category.getDataService",
-		URL_Serv: "http://127.0.0.1:8081/rest/itemcat/all?callback=category.getDataService",
-		//URL_Serv: "http://localhost:8082/category.json",
-		URL_BrandsServ: "http://d.360buy.com/brandVclist2/get?callback=category.getBrandService&ids=a,9211,9212^b,9214,9215^c,9217,9218^d,9220,9221^e,9223,9224^f,9226,9227^g,9229,9230^h,9232,9233^m,9235,9236^i,9238,9239^j,9241,9242^p,9244,9245^k,9247,9248^l,9250,9251",
+		URL_Serv: "http://localhost:8081/rest/itemcat/list?callback=category.getDataService",
+        // URL_Serv:"http://localhost:8081/category.json",
+		// URL_Serv: "http://rest.taotao.com/rest/itemcat/list?callback=category.getDataService",
+		// URL_BrandsServ: "http://d.360buy.com/brandVclist2/get?callback=category.getBrandService&ids=a,9211,9212^b,9214,9215^c,9217,9218^d,9220,9221^e,9223,9224^f,9226,9227^g,9229,9230^h,9232,9233^m,9235,9236^i,9238,9239^j,9241,9242^p,9244,9245^k,9247,9248^l,9250,9251",
 		FN_GetLink: function(a, b) {
 	        var c, d;
 	        switch (a) {
@@ -1206,9 +1207,9 @@ var category = {OBJ: $("#_JD_ALLSORT"),
     	//使用jsonp来实现跨域请求
         $.getJSONP(this.URL_Serv, category.getDataService);
     	//直接使用ajax请求json数据
-    	/*$.getJSON(this.URL_Serv, function(json){
-    		category.getDataService(json);
-    	});*/
+   	// $.getJSON(this.URL_Serv, function(json){
+   	// 	category.getDataService(json);
+   	// });
     },FN_GetBrands: function() {
       //  $.getJSONP(this.URL_BrandsServ, category.getBrandService)
     },FN_RefactorJSON: function(a, b) {
@@ -1356,7 +1357,7 @@ var category = {OBJ: $("#_JD_ALLSORT"),
     }), $("#site-nav").Jdropdown({delay: 50}, function() {
         $.ajax({url: "http://www.jd.com/hotwords.aspx?position=new-index-003",dataType: "script",scriptCharset: "gb2312",cache: !0})
     })), document.getElementById("navitems") ? $("#navitems li").Jdropdown() : $("#navitems-2013 li").Jdropdown()
-    		
+
 //    		$.ajax({url: ("https:" == document.location.protocol ? "https://" : "http://") + "passport." + pageConfig.FN_getDomain() + "/new/helloService.ashx?m=ls",
 //    			dataType: "jsonp",scriptCharset: "gb2312",success: function(a) {
 //            a && a.info && $("#loginbar").html(a.info), a && a.sso && $.each(a.sso, function() {
@@ -1364,7 +1365,7 @@ var category = {OBJ: $("#_JD_ALLSORT"),
 //                
 //            })
 //        }}), 
-        
+
 //        document.getElementById("settleup") ? (null != MCART.DATA_Amount && ($("#settleup s").eq(0).addClass("shopping"), $("#shopping-amount").html(MCART.DATA_Amount)), $("#settleup dl").Jdropdown({delay: 200}, function() {
 //        //MCART.FN_Refresh(), $("#settleup-url").attr("href", "http://cart.jd.com/cart/cart.html?r=" + +new Date)
 //    }
