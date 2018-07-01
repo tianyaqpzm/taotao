@@ -38,7 +38,7 @@ $(function(){
         			}
         		});
         	}else{
-        		$.post("/content/category/update",{id:node.id,name:node.text});
+        		$.post("/content/category/update",{id:node.id,name:node.text}); // 更新 数据库
         	}
         }
 	});
@@ -58,7 +58,7 @@ function menuHandler(item){
 		var _node = tree.tree('find',0);
 		tree.tree("select",_node.target).tree('beginEdit',_node.target);
 	}else if(item.name === "rename"){
-		tree.tree('beginEdit',node.target);
+		tree.tree('beginEdit',node.target);  // 重命名节点
 	}else if(item.name === "delete"){
 		$.messager.confirm('确认','确定删除名为 '+node.text+' 的分类吗？',function(r){
 			if(r){

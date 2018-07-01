@@ -71,5 +71,9 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.8.9" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.8.0" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.8.9" level="project" />
+    <orderEntry type="module" module-name="taotao-manager-pojo" />
+    <orderEntry type="library" name="Maven: taglibs:standard:1.0.4" level="project" />
+    <orderEntry type="library" name="Maven: xalan:xalan:2.6.0" level="project" />
+    <orderEntry type="library" name="Maven: xml-apis:xml-apis:1.0.b2" level="project" />
   </component>
 </module>
