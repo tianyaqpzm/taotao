@@ -6,7 +6,7 @@
         <artifactId>taotao-parent</artifactId>
         <groupId>com.taotao</groupId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../taotao-parent/pom.xml</relativePath>
+        <!--<relativePath>../taotao-parent/pom.xml</relativePath>-->
     </parent>
     <packaging>war</packaging>
 
@@ -60,6 +60,10 @@
         <dependency>
             <groupId>redis.clients</groupId>
             <artifactId>jedis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.solr</groupId>
+            <artifactId>solr-solrj</artifactId>
         </dependency>
 
 

@@ -6,7 +6,6 @@ import com.taotao.dataIntegrity.publicVerification.DataOwner;
 import com.taotao.dataIntegrity.publicVerification.PublicInfor;
 import com.taotao.dataIntegrity.tool.PropertiesUtil;
 import com.taotao.dataIntegrity.tool.Stopwatch;
-import com.taotao.pojo.Filetag;
 import com.taotao.service.IFileTagService;
 import it.unisa.dia.gas.jpbc.Element;
 import it.unisa.dia.gas.jpbc.Pairing;
@@ -22,7 +21,6 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.servlet.http.HttpServletRequest;
 import java.io.File;
 import java.io.IOException;
-import java.util.Map;
 import java.util.Properties;
 
 class Fileurl{

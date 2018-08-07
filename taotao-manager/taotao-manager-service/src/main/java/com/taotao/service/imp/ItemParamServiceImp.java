@@ -5,7 +5,6 @@ import com.taotao.mapper.TbItemParamMapper;
 import com.taotao.pojo.TbItemParam;
 import com.taotao.pojo.TbItemParamExample;
 import com.taotao.service.ItemParamService;
-import org.apache.taglibs.standard.lang.jstl.NullLiteral;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

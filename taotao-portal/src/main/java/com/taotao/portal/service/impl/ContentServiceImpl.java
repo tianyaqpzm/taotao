@@ -6,12 +6,14 @@ import com.taotao.common.utils.JsonUtils;
 import com.taotao.pojo.TbContent;
 import com.taotao.portal.service.ContentService;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@Service
 public class ContentServiceImpl implements ContentService {
 
 

@@ -49,7 +49,7 @@
         FRAMES: '.kv-preview-thumb',
         SORT_CSS: 'file-sortable',
         STYLE_SETTING: 'style="width:{width};height:{height};"',
-        OBJECT_PARAMS: '<param name="controller" value="true" />\n' +
+        OBJECT_PARAMS: '<param name="com.taotao.search.controller" value="true" />\n' +
         '<param name="allowFullScreen" value="true" />\n' +
         '<param name="allowScriptAccess" value="always" />\n' +
         '<param name="autoPlay" value="false" />\n' +

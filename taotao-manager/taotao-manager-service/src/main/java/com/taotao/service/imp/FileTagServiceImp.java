@@ -1,21 +1,13 @@
 package com.taotao.service.imp;
 
 import com.taotao.dataIntegrity.db.DBOperation;
-import com.taotao.dataIntegrity.publicVerification.MerkleTree;
-import com.taotao.dataIntegrity.tool.HashUtil;
 import com.taotao.mapper.FiletagMapper;
 import com.taotao.pojo.Filetag;
-import com.taotao.pojo.FiletagExample;
-import com.taotao.pojo.TbItemCatExample;
 import com.taotao.service.IFileTagService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import it.unisa.dia.gas.jpbc.Element;
 
 import javax.annotation.Resource;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Created by pei on 2017/8/19.
