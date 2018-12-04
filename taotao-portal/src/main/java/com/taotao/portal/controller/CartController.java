@@ -37,7 +37,7 @@ public class CartController {
 			@RequestParam(defaultValue="1")Integer num, 
 			HttpServletRequest request, HttpServletResponse response) {
 		TaotaoResult result = cartService.addCartItem(itemId, num, request, response);
-		return "redirect:/cart/success.html";
+		return "redirect:/cart/success.html";  // 绝对路径
 	}
 	
 	@RequestMapping("/success")

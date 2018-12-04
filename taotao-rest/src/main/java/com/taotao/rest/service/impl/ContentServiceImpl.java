@@ -19,6 +19,7 @@ public class ContentServiceImpl implements ContentService {
     private TbContentMapper contentMapper;
     @Autowired
     private JedisClient jedisClient;
+
     @Value("${INDEX_CONTENT_REDIS_KEY}")
     private String INDEX_CONTENT_REDIS_KEY;
 
@@ -28,11 +29,11 @@ public class ContentServiceImpl implements ContentService {
         // 从缓存中取数据
         try {
             String result = jedisClient.hget(INDEX_CONTENT_REDIS_KEY, contentCid + "");
-            if(!StringUtils.isBlank(result)){
+            if (!StringUtils.isBlank(result)) {
                 List<TbContent> tbContents = JsonUtils.jsonToList(result, TbContent.class);
                 return tbContents;
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
 
         }
@@ -45,9 +46,9 @@ public class ContentServiceImpl implements ContentService {
         try {
             // 把list 转化为字符串
             String s = JsonUtils.objectToJson(list);
-            jedisClient.hset(INDEX_CONTENT_REDIS_KEY,contentCid+"",s);
+            jedisClient.hset(INDEX_CONTENT_REDIS_KEY, contentCid + "", s);
 
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return list;

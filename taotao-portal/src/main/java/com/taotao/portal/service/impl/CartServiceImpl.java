@@ -49,9 +49,9 @@ public class CartServiceImpl implements CartService{
 			HttpServletRequest request, HttpServletResponse response) {
 		//取商品信息
 		CartItem cartItem = null;
-		//取购物车商品列表
+		//从cookie中  取购物车商品列表
 		List<CartItem> itemList = getCartItemList(request);
-		//判断购物车商品列表中是否存在此商品
+		//判断购物车商品列表中是否存在此商品   从cookie的购物车 中遍历寻找是否含有该商品
 		for (CartItem cItem : itemList) {
 			//如果存在此商品
 			if (cItem.getId() == itemId) {
@@ -61,6 +61,8 @@ public class CartServiceImpl implements CartService{
 				break;
 			}
 		}
+
+//		cookie 中没有该商品的信息，新建一个
 		if (cartItem == null) {
 			cartItem = new CartItem();
 			//根据商品id查询商品基本信息。
